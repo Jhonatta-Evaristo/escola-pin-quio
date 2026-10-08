@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Comunitária Pinóquio | Educação no Anjo da Guarda – São Luís</title>
+    <meta name="description"
+        content="Escola Comunitária Pinóquio, ligada ao Grêmio Cultural e Recreativo Anjo da Guarda, em São Luís – MA. Educação Infantil, Ensino Fundamental e projetos sociais desde 1975.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Karla:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <meta name="theme-color" content="#1657A8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-wrap">
+            <a href="#inicio" class="brand">
+                <img src="assets/img/logo-pinoquio.png" alt="Logo da Escola Comunitária Pinóquio" class="brand-mark"
+                    width="56" height="56">
+                <span class="brand-text">
+                    <strong>Escola Pinóquio</strong>
+                    <span>Grêmio Anjo da Guarda</span>
+                </span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#educacao">Educação</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#estrutura">Estrutura</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#encaminhamentos">Encaminhamentos</a>
+                <a href="#transparencia">Transparência</a>
+                <a href="#contato">Contato</a>
+                <a href="https://wa.me/5598984173316?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Escola%20Comunit%C3%A1ria%20Pin%C3%B3quio%20e%20as%20matr%C3%ADculas."
+                    class="btn btn-primary" style="display:none" id="mobileCta">Fale com a gente</a>
+            </nav>
+            <div class="nav-right">
+                <a href="https://wa.me/5598984173316?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Escola%20Comunit%C3%A1ria%20Pin%C3%B3quio%20e%20as%20matr%C3%ADculas."
+                    class="btn btn-primary btn-primary-desktop">Fale com a gente</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER INTERATIVO DE INFORMAÇÕES E DATAS -->
+    <div class="alert-banner">
+        <span>📅 <strong>15/10:</strong> Reunião de Pais e Mestres</span>
+        <span class="alert-sep">|</span>
+        <span>🎯 <strong>Matrículas:</strong> Abertas para o próximo semestre!</span>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg">
+                <img src="assets/img/hero.jpg" alt="Crianças e educadora cuidando da horta da escola">
+            </div>
+            <div class="hero-inner">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">🌱 Desde 1975 no Anjo da Guarda</span>
+                        <h1>Educação que transforma vidas e fortalece a comunidade.</h1>
+                        <p class="hero-sub">Há mais de 50 anos, a Escola Comunitária Pinóquio contribui para a formação
+                            de crianças
+                            e jovens, unindo educação, cultura, esporte e projetos sociais.</p>
+                        <div class="hero-ctas">
+                            <a href="#sobre" class="btn btn-ghost-white">Quero conhecer a escola</a>
+                            <a href="https://wa.me/5598984173316?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Escola%20Comunit%C3%A1ria%20Pin%C3%B3quio%20e%20as%20matr%C3%ADculas."
+                                class="btn btn-wa">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.16-4.94-4.35-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.45.29.15.46.13.63-.05.17-.18.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.7-.17 1.38Z" />
+                                </svg>
+                                Falar pelo WhatsApp
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="hero-stat"><strong class="counter" data-target="1975"
+                                    data-plain="true">0</strong><span>Ano de
+                                    fundação</span></div>
+                            <div class="hero-stat"><strong class="counter" data-target="50"
+                                    data-suffix="+">0</strong><span>Anos de
+                                    história</span></div>
+                            <div class="hero-stat"><strong class="counter" data-target="6"
+                                    data-suffix="+">0</strong><span>Projetos e
+                                    atividades</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre">
+            <div class="container sobre-grid">
+                <div class="sobre-img reveal-onscroll">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                        <path
+                            d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2.3 0 3.8 1.2 4.5 2.3.5.8.5 1.7 1.5 1.7s1-.9 1.5-1.7C14.2 5.2 15.7 4 18 4c4 0 5.5 4 3.5 8-2.5 4.5-9.5 9-9.5 9Z" />
+                    </svg>
+                </div>
+                <div class="sobre-text reveal-onscroll">
+                    <p class="eyebrow">Sobre a escola</p>
+                    <h2 style="margin-top:8px;font-size:clamp(1.7rem,3vw,2.3rem);">Uma escola que faz parte da
+                        comunidade</h2>
+                    <p>A Escola Comunitária Pinóquio faz parte da história do bairro Anjo da Guarda e atua desde 1975
+                        promovendo
+                        educação e desenvolvimento. Em conjunto com o Grêmio Cultural e Recreativo Anjo da Guarda, a
+                        instituição
+                        também desenvolve iniciativas que aproximam educação, cultura, esporte e ações sociais.</p>
+                    <div class="card-row">
+                        <div class="mini-card">
+                            <h3>Educação</h3>
+                            <p>Aprendizagem e desenvolvimento para crianças e jovens.</p>
+                        </div>
+                        <div class="mini-card">
+                            <h3>Comunidade</h3>
+                            <p>Uma escola próxima das famílias e da realidade da comunidade.</p>
+                        </div>
+                        <div class="mini-card">
+                            <h3>Transformação</h3>
+                            <p>Projetos que estimulam novas experiências, habilidades e oportunidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPOSTA -->
+        <section id="educacao" style="background:var(--bg-alt);">
+            <div class="container">
+                <div class="section-head reveal-onscroll">
+                    <p class="eyebrow">Nossa proposta</p>
+                    <h2 style="margin-top:8px;">Educação para além da sala de aula</h2>
+                    <p>Combinamos ensino formal com atividades práticas que ampliam o repertório e as oportunidades de
+                        cada
+                        criança.</p>
+                </div>
+                <div class="proposta-grid">
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path d="M12 3 2 8l10 5 10-5-10-5Z" />
+                                <path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5" />
+                            </svg></div>
+                        <h3>Educação</h3>
+                        <p>Educação Infantil e Ensino Fundamental.</p>
+                    </div>
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path d="M12 22V12" />
+                                <path d="M12 12C12 7 9 4 4 4c0 5 3 8 8 8Z" />
+                                <path d="M12 12c0-5 3-8 8-8 0 5-3 8-8 8Z" />
+                            </svg></div>
+                        <h3>Horta</h3>
+                        <p>Contato com a natureza e aprendizado através de atividades práticas.</p>
+                    </div>
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path d="M9 18V5l12-2v13" />
+                                <circle cx="6" cy="18" r="3" />
+                                <circle cx="18" cy="16" r="3" />
+                            </svg></div>
+                        <h3>Música</h3>
+                        <p>Desenvolvimento da criatividade, expressão e sensibilidade.</p>
+                    </div>
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M12 3v18M3 12h18" />
+                            </svg></div>
+                        <h3>Taekwondo</h3>
+                        <p>Disciplina, concentração, respeito e atividade física.</p>
+                    </div>
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path d="M14 3 3 14l3 3L17 6l-3-3Z" />
+                                <path d="M6 17l-3 4 4-3" />
+                            </svg></div>
+                        <h3>Marcenaria</h3>
+                        <p>Criatividade, habilidades práticas e desenvolvimento.</p>
+                    </div>
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <circle cx="12" cy="5" r="2" />
+                                <path d="M12 7v6l-4 8M12 13l4 8M8 11l-3 2M16 11l3 2" />
+                            </svg></div>
+                        <h3>Zumba</h3>
+                        <p>Movimento, saúde e integração.</p>
+                    </div>
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path d="M12 21c4-3 8-6.5 8-11a5 5 0 0 0-8-4 5 5 0 0 0-8 4c0 4.5 4 8 8 11Z" />
+                            </svg></div>
+                        <h3>Projetos sociais</h3>
+                        <p>Ações voltadas para o fortalecimento da comunidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="projetos" id="projetos">
+            <div class="container">
+                <div class="section-head reveal-onscroll">
+                    <p class="eyebrow" style="color:var(--accent);">Projetos</p>
+                    <h2 style="margin-top:8px;">Projetos que despertam talentos</h2>
+                    <p>Conheça as iniciativas que fazem parte da rotina da escola e do grêmio.</p>
+                </div>
+                <div class="proj-grid">
+                    <div class="proj-card reveal-onscroll">
+                        <div class="proj-photo" onclick="openLightbox('horta')">
+                            <img src="assets/img/horta.jpg" alt="Crianças plantando e regando a horta escolar">
+                            <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="7" />
+                                    <path d="m21 21-4.3-4.3M11 8v6M8 11h6" />
+                                </svg></span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Horta</h3>
+                            <p>Cultivo, cuidado com a terra e aprendizado prático sobre a natureza.</p>
+                        </div>
+                    </div>
+                    <div class="proj-card reveal-onscroll">
+                        <div class="proj-photo" onclick="openLightbox('musica')">
+                            <img src="assets/img/musica.jpg"
+                                alt="Crianças tocando instrumentos de percussão em roda de música">
+                            <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="7" />
+                                    <path d="m21 21-4.3-4.3M11 8v6M8 11h6" />
+                                </svg></span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Música</h3>
+                            <p>Espaço para expressão, ritmo e descoberta artística.</p>
+                        </div>
+                    </div>
+                    <div class="proj-card reveal-onscroll">
+                        <div class="proj-photo" onclick="openLightbox('taekwondo')">
+                            <img src="assets/img/taekwondo.jpg"
+                                alt="Turma de Taekwondo praticando em fila com a instrutora">
+                            <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="7" />
+                                    <path d="m21 21-4.3-4.3M11 8v6M8 11h6" />
+                                </svg></span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Taekwondo</h3>
+                            <p>Disciplina e desenvolvimento físico em ambiente respeitoso.</p>
+                        </div>
+                    </div>
+                    <div class="proj-card reveal-onscroll">
+                        <div class="proj-photo" onclick="openLightbox('marcenaria')">
+                            <img src="assets/img/marcenaria.jpg"
+                                alt="Crianças e instrutor construindo brinquedos de madeira na oficina de marcenaria">
+                            <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="7" />
+                                    <path d="m21 21-4.3-4.3M11 8v6M8 11h6" />
+                                </svg></span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Marcenaria</h3>
+                            <p>Mãos na massa: habilidade manual e criatividade aplicada.</p>
+                        </div>
+                    </div>
+                    <div class="proj-card reveal-onscroll">
+                        <div class="proj-photo" onclick="openLightbox('zumba')">
+                            <img src="assets/img/zumba.jpg" alt="Grupo animado praticando Zumba em salão comunitário">
+                            <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="7" />
+                                    <path d="m21 21-4.3-4.3M11 8v6M8 11h6" />
+                                </svg></span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Zumba</h3>
+                            <p>Atividade física, saúde e integração entre alunos e famílias.</p>
+                        </div>
+                    </div>
+                    <div class="proj-card reveal-onscroll">
+                        <div class="proj-photo" onclick="openLightbox('bazar')">
+                            <img src="assets/img/bazar.jpg"
+                                alt="Voluntários e comunidade organizando roupas e utensílios no Bazar Social">
+                            <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="7" />
+                                    <path d="m21 21-4.3-4.3M11 8v6M8 11h6" />
+                                </svg></span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Bazar Social</h3>
+                            <p>Iniciativa que apoia a comunidade e fortalece a rede de ajuda mútua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS -->
+        <section id="estrutura">
+            <div class="container">
+                <div class="section-head reveal-onscroll">
+                    <p class="eyebrow">Diferenciais</p>
+                    <h2 style="margin-top:8px;">Por que conhecer a Escola Pinóquio?</h2>
+                </div>
+                <div class="dif-grid reveal-onscroll">
+                    <div class="dif-item">
+                        <h3>Desde 1975</h3>
+                        <p>Uma história construída junto à comunidade.</p>
+                    </div>
+                    <div class="dif-item">
+                        <h3>Formação integral</h3>
+                        <p>Educação combinada com cultura, esporte e atividades práticas.</p>
+                    </div>
+                    <div class="dif-item">
+                        <h3>Projetos diversificados</h3>
+                        <p>Experiências que vão além do ensino tradicional.</p>
+                    </div>
+                    <div class="dif-item">
+                        <h3>Ambiente acolhedor</h3>
+                        <p>Um espaço pensado para aprendizagem e convivência.</p>
+                    </div>
+                    <div class="dif-item">
+                        <h3>Atuação comunitária</h3>
+                        <p>Compromisso com o desenvolvimento da comunidade.</p>
+                    </div>
+                    <div class="dif-item">
+                        <h3>Experiência e tradição</h3>
+                        <p>Décadas contribuindo para a educação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSSOS ENCAMINHAMENTOS & VÍDEO -->
+        <section id="encaminhamentos">
+            <div class="container">
+                <div class="sobre-grid">
+                    <div class="sobre-text reveal-onscroll">
+                        <h2>Nossos Encaminhamentos</h2>
+                        <p>Trabalhamos em rede para garantir que nossas crianças e jovens tenham acesso a oportunidades
+                            contínuas de desenvolvimento. Conheça as instituições parceiras e os caminhos que
+                            construímos após a formação básica.</p>
+
+                        <ul class="contato-list mt-lg">
+                            <li class="contato-row">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Jovem Aprendiz</strong>
+                                    <span>Encaminhamento direto para programas de primeiro emprego.</span>
+                                </div>
+                            </li>
+                            <li class="contato-row">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Bolsas de Estudo</strong>
+                                    <span>Parcerias com escolas de ensino médio e cursos técnicos.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ESPAÇO RESERVADO PARA O VÍDEO INSTITUCIONAL -->
+                    <div class="sobre-img video-box reveal-onscroll">
+                        <!-- Quando receber o vídeo, troque o bloco abaixo pelo iframe do YouTube ou por <video controls src="assets/video/institucional.mp4"></video> -->
+                        <div class="video-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <p>Vídeo Institucional em breve</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRANSPARÊNCIA E PORTFÓLIO VALE -->
+        <section id="transparencia" style="background:var(--bg-alt);">
+            <div class="container">
+                <div class="section-head reveal-onscroll">
+                    <h2>Transparência e Prestação de Contas</h2>
+                    <p>Acompanhe nossos balanços, relatórios de impacto e o portfólio oficial de resultados.</p>
+                </div>
+                <div class="proposta-grid proposta-grid-2">
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-gold">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Relatório Vale</h3>
+                        <p>Portfólio anual de atividades e prestação de contas para a Fundação Vale.</p>
+                        <a href="assets/relatorio-vale.pdf" download class="btn btn-outline btn-sm">Baixar PDF</a>
+                    </div>
+
+                    <div class="prop-card reveal-onscroll">
+                        <div class="prop-icon icon-teal">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Balanços Financeiros</h3>
+                        <p>Acesse o detalhamento de investimentos e recursos aplicados nos projetos sociais.</p>
+                        <a href="#" class="btn btn-outline btn-sm">Ver Documentos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MATRICULAS -->
+        <section>
+            <div class="container">
+                <div class="matriculas reveal-onscroll">
+                    <div>
+                        <h2>Matricule seu filho na Escola Pinóquio</h2>
+                        <p>Quer conhecer melhor nossa escola, saber sobre as turmas, horários e disponibilidade de
+                            vagas? Fale com
+                            nossa equipe.</p>
+                    </div>
+                    <div class="matriculas-cta">
+                        <a href="https://wa.me/5598984173316?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Escola%20Comunit%C3%A1ria%20Pin%C3%B3quio%20e%20as%20matr%C3%ADculas."
+                            class="btn btn-primary">Quero saber sobre as matrículas</a>
+                        <div class="matriculas-note">
+                            <strong>Atendimento pelo WhatsApp</strong>
+                            (98) 98417-3316
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section id="depoimentos">
+            <div class="container">
+                <div class="depo-top reveal-onscroll">
+                    <div class="section-head" style="margin-bottom:0;">
+                        <p class="eyebrow">Depoimentos</p>
+                        <h2 style="margin-top:8px;">O que dizem sobre a escola</h2>
+                    </div>
+                    <div class="rating-badge">
+                        <span class="rating-num">4,8</span>
+                        <div>
+                            <div class="stars">★★★★★</div>
+                            <div class="sub">Google · 4 avaliações</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="depo-grid">
+                    <div class="depo-card reveal-onscroll">
+                        <q>Ótimo ambiente.</q>
+                        <footer>— Rogerio Baltazar</footer>
+                    </div>
+                    <div class="depo-card reveal-onscroll">
+                        <q>O grêmio trabalha com diversos projetos e programas sociais de muita relevância para a
+                            comunidade.</q>
+                        <footer>— Carla Bianca Silva</footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTAGRAM -->
+        <section style="background:var(--bg-alt);">
+            <div class="container insta-wrap">
+                <div class="reveal-onscroll">
+                    <span class="insta-handle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8">
+                            <rect x="3" y="3" width="18" height="18" rx="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="1" />
+                        </svg>
+                        @escpinoquio
+                    </span>
+                    <h2 style="font-size:clamp(1.7rem,3vw,2.3rem);">Acompanhe nossa rotina</h2>
+                    <p style="color:var(--ink-soft);margin-top:14px;font-size:1.02rem;">Veja nossas atividades, projetos
+                        e
+                        momentos da comunidade escolar.</p>
+                    <a href="https://www.instagram.com/escpinoquio/" class="btn btn-outline"
+                        style="margin-top:26px;">Ver
+                        Instagram</a>
+                </div>
+                <div class="insta-grid reveal-onscroll">
+                    <div class="insta-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="M21 15l-5-5L5 21" />
+                        </svg></div>
+                    <div class="insta-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="M21 15l-5-5L5 21" />
+                        </svg></div>
+                    <div class="insta-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="M21 15l-5-5L5 21" />
+                        </svg></div>
+                    <div class="insta-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="M21 15l-5-5L5 21" />
+                        </svg></div>
+                    <div class="insta-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="M21 15l-5-5L5 21" />
+                        </svg></div>
+                    <div class="insta-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="M21 15l-5-5L5 21" />
+                        </svg></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <div class="container contato-grid">
+                <div class="reveal-onscroll">
+                    <p class="eyebrow">Localização</p>
+                    <h2 style="margin-top:8px;font-size:clamp(1.7rem,3vw,2.3rem);">Venha conhecer a Escola Pinóquio</h2>
+                    <div class="contato-list">
+                        <div class="contato-row">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
+                                <circle cx="12" cy="9" r="2.5" />
+                            </svg>
+                            <div><strong>Av. Vaticano, Qd K1, S/N</strong><span>Anjo da Guarda, São Luís – MA, CEP
+                                    65085-255</span>
+                            </div>
+                        </div>
+                        <div class="contato-row">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path
+                                    d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .7a2 2 0 0 1 1.6 2Z" />
+                            </svg>
+                            <div><strong>(98) 98417-3316</strong><span>WhatsApp e telefone</span></div>
+                        </div>
+                        <div class="contato-row">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" />
+                            </svg>
+                            <div><strong>@escpinoquio</strong><span>Instagram da escola</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-box reveal-onscroll">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                        <path d="M9 20l-5-2V6l5-2 6 2 5-2v16l-5 2-6-2Z" />
+                        <path d="M9 4v16M15 6v16" />
+                    </svg>
+                    <p>Mapa reservado para incorporação do Google Maps com a localização da escola.</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Av.+Vaticano+Qd+K1+Anjo+da+Guarda+S%C3%A3o+Luis+MA+65085-255"
+                        class="btn btn-outline">Como chegar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section>
+            <div class="container">
+                <div class="cta-final reveal-onscroll">
+                    <h2>O futuro começa com uma boa educação.</h2>
+                    <p>Conheça a Escola Comunitária Pinóquio e descubra uma educação que valoriza conhecimento,
+                        comunidade,
+                        cultura, esporte e desenvolvimento.</p>
+                    <a href="https://wa.me/5598984173316?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Escola%20Comunit%C3%A1ria%20Pin%C3%B3quio%20e%20as%20matr%C3%ADculas."
+                        class="btn btn-primary">Fale com a gente pelo WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <img src="assets/img/logo-pinoquio.png" alt="" class="footer-logo" width="52" height="52">
+                        <strong>Escola Comunitária Pinóquio</strong>
+                    </div>
+                    <p style="max-width:34ch;font-size:0.92rem;">Grêmio Cultural e Recreativo Anjo da Guarda</p>
+                </div>
+                <div>
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#encaminhamentos">Encaminhamentos</a></li>
+                        <li><a href="#transparencia">Transparência</a></li>
+                        <li><a href="#trabalhe-conosco">Trabalhe Conosco</a></li>
+                        <li><a href="#contato">Matrículas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Redes e contato</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/escpinoquio/">Instagram</a></li>
+                        <li><a href="https://linktr.ee/gremioanjodaguarda">Linktree</a></li>
+                        <li><a href="https://wa.me/5598984173316">WhatsApp</a></li>
+                    </ul>
+                    <p style="margin-top:16px;font-size:0.88rem;">Av. Vaticano, Qd K1, S/N – Anjo da Guarda, São Luís –
+                        MA</p>
+                    <p style="font-size:0.88rem;">(98) 98417-3316</p>
+                </div>
+                <div class="footer-rh" id="trabalhe-conosco">
+                    <h4>Trabalhe Conosco</h4>
+                    <p>Faça parte da nossa equipe educacional e administrativa.</p>
+                    <a href="mailto:rh@escolapinoquio.org.br" class="btn btn-outline">Enviar Currículo</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Escola Comunitária Pinóquio. Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5598984173316?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Escola%20Comunit%C3%A1ria%20Pin%C3%B3quio%20e%20as%20matr%C3%ADculas."
+        class="wa-float" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.16-4.94-4.35-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.45.29.15.46.13.63-.05.17-.18.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.7-.17 1.38Z" />
+        </svg>
+    </a>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="lightbox-inner">
+            <img id="lightboxImg" src="" alt="">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
