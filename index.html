@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Grêmio Cultural e Recreativo Anjo da Guarda — educação, esporte, cultura e transformação social desde 1975.">
+    <title>Grêmio Cultural e Recreativo Anjo da Guarda | Escola Comunitária Pinóquio</title>
+    <link rel="icon" href="assets/img/favicon-32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ---------- CARROSSEL DE PARCEIROS ---------- */
+        .partner-carousel {
+            position: relative;
+            overflow: hidden;
+            padding: 10px 0;
+            -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+        }
+
+        .partner-track {
+            display: flex;
+            gap: 18px;
+            width: max-content;
+            animation: partner-scroll 80s linear infinite;
+        }
+
+        .partner-carousel:hover .partner-track,
+        .partner-carousel:focus-within .partner-track {
+            animation-play-state: paused;
+        }
+
+        .partner-logo {
+            flex: 0 0 auto;
+            width: 180px;
+            height: 110px;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .partner-logo:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+
+        .partner-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .partner-cta {
+            margin-top: 36px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .partner-cta p {
+            color: var(--ink-soft);
+            font-weight: 700;
+        }
+
+        .partner-cta .btn {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+
+        .partner-cta .btn:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+            color: #fff;
+        }
+
+        @keyframes partner-scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width:600px) {
+            .partner-logo {
+                width: 140px;
+                height: 90px;
+                padding: 10px;
+            }
+
+            .partner-track {
+                gap: 12px;
+                animation-duration: 65s;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .partner-carousel {
+                -webkit-mask-image: none;
+                mask-image: none;
+            }
+
+            .partner-track {
+                animation: none;
+                width: auto;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-wrap">
+            <a class="brand" href="#inicio" aria-label="Página inicial">
+                <img src="assets/img/logo-pinoquio.png" alt="Logo da Escola Comunitária Pinóquio" width="54"
+                    height="54">
+                <span class="brand-text"><strong>Grêmio Cultural e Recreativo Anjo da Guarda</strong><span>Escola
+                        Comunitária Pinóquio</span></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+                <a href="#inicio">Início</a><a href="#sobre">Sobre Nós</a><a href="#projetos">Programas e Projetos</a>
+                <a href="#escola">Nossa Escola</a>
+                <div class="nav-dropdown"><a href="#contato">Fale Conosco</a>
+                    <div class="nav-dropdown-menu"><a href="#contato">Contato com a instituição</a><a
+                            href="#voluntariado">Cadastro de voluntários</a></div>
+                </div>
+                <a href="#transparencia">Transparência</a>
+                <a class="btn btn-primary nav-donate" href="https://forms.gle/NaqeXxsUjZ79HSR37" target="_blank"
+                    rel="noopener">Doação</a>
+            </nav>
+            <div class="nav-right"><a href="https://forms.gle/NaqeXxsUjZ79HSR37" target="_blank" rel="noopener"
+                    class="btn btn-primary btn-primary-desktop">Faça uma doação</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu"
+                    aria-expanded="false"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-bg"><img src="assets/img/inicio.jpg" alt="Atividade comunitária da Escola Pinóquio"></div>
+            <div class="hero-inner">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">Desde 1975 construindo e transformando realidades</span>
+                        <h1>Transformação Social, Esporte e Educação em um só lugar.</h1>
+                        <p class="hero-sub">Há mais de 50 anos, o Grêmio Cultural e Recreativo Anjo da Guarda contribui
+                            para a formação e o desenvolvimento comunitário na região Itaqui-Bacanga. Conectamos
+                            educação infantil, cultura, arte, esporte, assistência social e formação profissional. Nossa
+                            missão é criar oportunidades reais para crianças, jovens, adultos e idosos crescerem com
+                            dignidade e alegria.</p>
+                        <div class="hero-ctas"><a href="#sobre" class="btn btn-ghost-white">Conheça nossa
+                                instituição</a><a href="https://forms.gle/NaqeXxsUjZ79HSR37" target="_blank"
+                                rel="noopener" class="btn btn-wa">Torne-se um contribuinte ou parceiro</a></div>
+                        <div class="hero-stats">
+                            <div class="hero-stat"><strong>1975</strong><span>Ano de fundação</span></div>
+                            <div class="hero-stat"><strong>51+</strong><span>Anos de atuação</span></div>
+                            <div class="hero-stat"><strong>São Luís</strong><span>Região Itaqui-Bacanga</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Sobre nós</p>
+                    <h2>Conectamos educação, arte e esporte para transformar realidades e fortalecer a comunidade.</h2>
+                    <p>Somos uma Organização da Sociedade Civil, fundada em 1975, com 51 anos de atuação na região
+                        Itaqui-Bacanga, no bairro do Anjo da Guarda, em São Luís. Somos referência em educação
+                        comunitária e desenvolvimento social, atuando nas áreas de educação, cultura, assistência social
+                        e formação profissional. Acreditamos no poder da educação, da arte, do esporte e da convivência
+                        comunitária para transformar vidas.</p>
+                </div>
+                <div class="proposta-grid proposta-grid-2">
+                    <article class="prop-card">
+                        <h3>Programas e Projetos Sociais</h3>
+                        <p><strong>Foco:</strong> Esporte, cultura, saúde e comunidade.</p>
+                        <ul>
+                            <p>Esportes: Taekwondo e Zumba.</p>
+                            <p>Cultura e oficinas: Música, Culinária, Marcenaria e Costura Criativa.</p>
+                            <p>Sustentabilidade: Horta comunitária e feira local.</p>
+                        </ul>
+                    </article>
+                    <article class="prop-card">
+                        <h3>Educação Infantil</h3>
+                        <p><strong>Foco:</strong> Formação escolar integral para crianças.</p>
+                        <ul>
+                            <p>Ensino: Educação Infantil com olhar humanizado.</p>
+                            <p>Reforço escolar: Apoio para crianças e adolescentes.</p>
+                            <p>Estrutura: Ambientes seguros e acolhedores.</p>
+                        </ul>
+                    </article>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card"><strong>+115</strong><span>Crianças do Infantil ao Fundamental na Escola
+                            Comunitária Pinóquio</span></div>
+                    <div class="stat-card"><strong>+80</strong><span>Idosos no Programa Vida e Movimento</span></div>
+                    <div class="stat-card"><strong>+141</strong><span>Crianças e adolescentes no Programa
+                            Horizonte</span></div>
+                    <div class="stat-card"><strong>+331</strong><span>Famílias no Projeto Rede de Prosperidade
+                            Familiar</span></div>
+                    <div class="stat-card"><strong>+20</strong><span>Famílias no Programa de Segurança Alimentar e
+                            Quintais Produtivos</span></div>
+                    <div class="stat-card"><strong>+20</strong><span>Famílias no Programa de Qualificação
+                            Profissional</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="identidade">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Nossa identidade</p>
+                    <h2>Missão, visão e valores</h2>
+                </div>
+                <div class="identidade-grid">
+                    <article class="ident-card">
+                        <h3>Missão</h3>
+                        <p>Contribuir para o desenvolvimento sustentável da comunidade, promovendo a educação, a saúde e
+                            o protagonismo, por meio de programas e projetos que visam a melhoria da qualidade de vida e
+                            a construção de uma sociedade mais justa e igualitária.</p>
+                    </article>
+                    <article class="ident-card">
+                        <h3>Visão</h3>
+                        <p>Ser reconhecida como uma força catalisadora no desenvolvimento sustentável da comunidade,
+                            deixando um legado duradouro de educação e saúde que transforme vidas e promova uma
+                            sociedade mais justa e igualitária.</p>
+                    </article>
+                    <article class="ident-card">
+                        <h3>Valores</h3>
+                        <ul class="valores-list">
+                            <li>Responsabilidade</li>
+                            <li>Pessoas</li>
+                            <li>Processos</li>
+                            <li>Transparência</li>
+                            <li>Articulação</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="trajetoria" style="background:var(--bg-alt)">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Nossa história</p>
+                    <h2>Nossa Trajetória de Impacto Social</h2>
+                </div>
+                <div class="timeline">
+                    <article><span>1975</span>
+                        <div>
+                            <h3>Nasce o Grêmio Anjo da Guarda</h3>
+                            <p><strong>Nossa Semente:</strong> Nossa instituição foi fundada com o propósito de promover
+                                a integração, cultura, esporte e apoio social aos moradores da área Itaqui-Bacanga.</p>
+                        </div>
+                    </article>
+                    <article><span>1980</span>
+                        <div>
+                            <h3>Fundação da Escola Comunitária Pinóquio</h3>
+                            <p><strong>Educação que Transforma:</strong> Ampliação da nossa atuação com a abertura da
+                                Escola Pinóquio, oferecendo ensino infantil e fundamental de qualidade visando um futuro
+                                promissor às crianças da região.</p>
+                        </div>
+                    </article>
+                    <article><span>2000</span>
+                        <div>
+                            <h3>Expansão dos Projetos e Programas Sociais</h3>
+                            <p><strong>Além da Sala de Aula:</strong> Início formal dos projetos integrados de esporte,
+                                artes e capacitação. A instituição passa a atender jovens, adultos e idosos.</p>
+                        </div>
+                    </article>
+                    <article><span>2010</span>
+                        <div>
+                            <h3>Fortalecimento Institucional e Parcerias</h3>
+                            <p><strong>Voz e Sustentabilidade:</strong> Conquista de assento nos conselhos de direitos e
+                                consolidação das primeiras grandes parcerias com empresas privadas e incentivos fiscais
+                                para ampliar o impacto dos projetos.</p>
+                        </div>
+                    </article>
+                    <article><span>2020</span>
+                        <div>
+                            <h3>50 Anos, Reconhecimento e Futuro</h3>
+                            <p><strong>Meio Século de Legado:</strong> Celebração de 50 anos de dedicação comunitária,
+                                marcada por premiações, certificações de transparência e reconhecimento como uma das
+                                principais instituições de transformação social atuando na Região.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="premiacoes">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Reconhecimento</p>
+                    <h2>Premiações e certificações</h2>
+                </div>
+                <div class="proposta-grid">
+                    <article class="prop-card">
+                        <h3><a href="https://drive.google.com/file/d/1erDrO2Pj9ZxZM5yf8uy-IMsh0mKWkjLN/view?usp=sharing"
+                                target="_blank" rel="noopener">CEBAS</a>.</h3>
+                        <p>Certificação de Entidade Beneficente de Assistência Social.</p>
+                    </article>
+                    <article class="prop-card">
+                        <h3><a href="https://drive.google.com/file/d/1_NIF8_z1tdJO5GYioRDX6zkr2YyN1ndH/view?usp=sharing"
+                                target="_blank" rel="noopener">Selo Entidade Foguete</a>.</h3>
+                        <p>Reconhecimento da Rede Gerando Falcões — 2024 e 2025.</p>
+                    </article>
+                    <article class="prop-card">
+                        <h3><a href="https://drive.google.com/file/d/1_XjN7QQG9YwYJnTH2Bt7mtMM4onE2GG_/view?usp=sharing"
+                                target="_blank" rel="noopener">Prêmio REMADD</a>.</h3>
+                        <p>Rede Maranhense de Diálogos Sobre Drogas, categoria Prevenção — 2025.</p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="ods" style="background:var(--bg-alt)">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Agenda 2030</p>
+                    <h2>Nossa atuação alinhada às ODS</h2>
+                    <p>Nosso propósito de existência está conectado aos Objetivos de Desenvolvimento Sustentável da ONU,
+                        através de nossas ações, projetos e parcerias.</p>
+                </div>
+                <div class="ods-grid">
+                    <a href="https://brasil.un.org/pt-br/sdgs/1" target="_blank" rel="noopener">01 <strong>Erradicação
+                            da pobreza</strong></a>
+                    <a href="https://brasil.un.org/pt-br/sdgs/2" target="_blank" rel="noopener">02 <strong>Fome zero e
+                            agricultura sustentável</strong></a>
+                    <a href="https://brasil.un.org/pt-br/sdgs/3" target="_blank" rel="noopener">03 <strong>Saúde e
+                            bem-estar</strong></a>
+                    <a href="https://brasil.un.org/pt-br/sdgs/4" target="_blank" rel="noopener">04 <strong>Educação de
+                            qualidade</strong></a>
+                    <a href="https://brasil.un.org/pt-br/sdgs/8" target="_blank" rel="noopener">08 <strong>Trabalho
+                            decente e crescimento econômico</strong></a>
+                    <a href="https://brasil.un.org/pt-br/sdgs/10" target="_blank" rel="noopener">10 <strong>Redução das
+                            desigualdades</strong></a>
+                    <a href="https://brasil.un.org/pt-br/sdgs/12" target="_blank" rel="noopener">12 <strong>Consumo e
+                            produção responsáveis</strong></a>
+                    <a href="https://brasil.un.org/pt-br/sdgs/16" target="_blank" rel="noopener">16 <strong>Paz, justiça
+                            e instituições eficazes</strong></a>
+                    <a href="https://brasil.un.org/pt-br/sdgs/17" target="_blank" rel="noopener">17 <strong>Parcerias e
+                            meios de implementação</strong></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="parceiros">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Rede de colaboração</p>
+                    <h2>Nossos Parceiros</h2>
+                    <p>Acreditamos que a transformação social acontece por meio da união de esforços. Conheça as
+                        organizações que caminham conosco.</p>
+                </div>
+            </div>
+            <div class="partner-carousel" aria-label="Logomarcas dos parceiros">
+                <div class="partner-track" id="partnerTrack">
+                    <div class="partner-logo"><img src="assets/img/parceiros/gerando-falcoes.png" alt="Gerando Falcões"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/instituto-ser.png" alt="Instituto Ser"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/rede-de-prosperidade-familiar.png"
+                            alt="Rede de Prosperidade Familiar" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/porto-itaqui.svg" alt="Porto do Itaqui"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/wilson-sons.png" alt="Wilson Sons"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/tegram.png" alt="Tegram Itaqui"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/instituto-renner.svg"
+                            alt="Instituto Lojas Renner" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/sesc.png" alt="SESC" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/senar.png" alt="SENAR Maranhão"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/nota-solidaria.png" alt="Nota Solidária"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/soft-flex.png" alt="Soft Flex"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/comida-invisivel.svg"
+                            alt="Comida Invisível" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/mpc-brasil.png" alt="MPC Brasil"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/praxi-brasil.png" alt="PRAXI Brasil"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/cieds.png" alt="CIEDS" loading="lazy">
+                    </div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/fazendinha.png" alt="Fazendinha"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/artesanato-sao-jose.png"
+                            alt="Artesanato São José" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/sec-ma.png"
+                            alt="SEC — Secretaria de Estado da Educação do Maranhão" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/sedes-ma.png"
+                            alt="SEDES — Governo do Maranhão" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/iema.png" alt="IEMA Itaqui Bacanga"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/escola-de-musica.png"
+                            alt="Escola de Música do Estado do Maranhão Lilah Lisboa de Araújo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/cras.png"
+                            alt="CRAS — Centro de Referência da Assistência Social" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/bombeiros-ma.png"
+                            alt="Corpo de Bombeiros Militar do Maranhão" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/cmdca.png"
+                            alt="CMDCA — Conselho Municipal dos Direitos da Criança e do Adolescente de São Luís"
+                            loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/cedca.png"
+                            alt="CEDCA — Conselho Estadual dos Direitos da Criança e do Adolescente" loading="lazy">
+                    </div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/cmas.png"
+                            alt="CMAS — Conselho Municipal de Assistência Social" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/img/parceiros/cmdi.png"
+                            alt="CMDI — Conselho Municipal dos Direitos do Idoso" loading="lazy"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="partner-cta">
+                    <p>Quer apoiar nossos projetos? Seja nosso parceiro.</p><a class="btn btn-primary"
+                        href="https://forms.gle/NaqeXxsUjZ79HSR37" target="_blank" rel="noopener">Torne-se um
+                        contribuinte ou parceiro</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow" style="color:var(--accent)">Nossa atuação</p>
+                    <h2>Programas e Projetos Sociais</h2>
+                    <p>Iniciativas que promovem desenvolvimento, convivência, saúde, cultura e oportunidades.</p>
+                </div>
+                <h3 class="project-group-title">Desenvolvimento Infantil e Juvenil</h3>
+                <div class="proj-grid">
+                    <article class="proj-card">
+                        <div class="proj-photo"><img src="assets/img/reforço.jpg" alt="Atividade educativa da escola">
+                        </div>
+                        <div class="proj-body">
+                            <h3>Reforço Escolar</h3>
+                            <p>Apoio à aprendizagem de crianças e adolescentes.</p>
+                        </div>
+                    </article>
+                    <article class="proj-card">
+                        <div class="proj-photo"><img src="assets/img/madeirada.jpg" alt="Oficina de marcenaria"></div>
+                        <div class="proj-body">
+                            <h3>Marcenaria</h3>
+                            <p>Oficinas de expressão artística, criatividade e habilidades manuais. <a
+                                    href="#video-musica">Assista à apresentação do projeto de Marcenaria</a>.</p>
+                        </div>
+                    </article>
+                    <article class="proj-card">
+                        <div class="proj-photo"><img src="assets/img/luta.jpg" alt="Aula de Taekwondo"></div>
+                        <div class="proj-body">
+                            <h3>Taekwondo</h3>
+                            <p>Esporte, disciplina, respeito e desenvolvimento físico.</p>
+                        </div>
+                    </article>
+                </div>
+                <h3 class="project-group-title">Programa Vida em Movimento</h3>
+                <div class="proj-grid">
+                    <article class="proj-card">
+                        <div class="proj-photo"><img src="assets/img/zumbeira.jpg" alt="Atividade de Zumba"></div>
+                        <div class="proj-body">
+                            <h3>Zumba</h3>
+                            <p>Movimento, saúde e integração.</p>
+                        </div>
+                    </article>
+                    <article class="proj-card">
+                        <div class="proj-photo text-photo"><img src="assets/img/costura.jpg" alt="Costura Criativa">
+                        </div>
+                        <div class="proj-body">
+                            <h3>Costura Criativa</h3>
+                            <p>Aprendizagem de técnicas e desenvolvimento de habilidades.</p>
+                        </div>
+                    </article>
+                    <article class="proj-card">
+                        <div class="proj-photo text-photo"><img src="assets/img/musga.jpg" alt="Costura Criativa"></div>
+                        <div class="proj-body">
+                            <h3>Oficina de Musica</h3>
+                            <p>Oficinas de Musica estimulando a criatividade, a expressão artística e o trabalho em
+                                equipe por meio de atividades práticas e dinâmicas.</p>
+                        </div>
+                    </article>
+                    <article class="proj-card">
+                        <div class="proj-photo text-photo"><img src="assets/img/artesanato.jpg" alt="Artesanato"></div>
+                        <div class="proj-body">
+                            <h3>Artesanato</h3>
+                            <p>A oficina de artesanato é o espaço onde se aprende e pratica essas técnicas, produzindo
+                                peças únicas, preservando a cultura e gerando renda</p>
+                        </div>
+                    </article>
+                </div>
+                <h3 class="project-group-title">Programa de Segurança Alimentar e Quintais Produtivos</h3>
+                <div class="proj-grid">
+                    <article class="proj-card">
+                        <div class="proj-photo"><img src="assets/img/hortazada.jpg" alt="Horta comunitária"></div>
+                        <div class="proj-body">
+                            <h3>Horta</h3>
+                            <p>Produção sustentável, alimentação e cuidado com a terra.</p>
+                        </div>
+                    </article>
+                    <article class="proj-card">
+                        <div class="proj-photo text-photo"><img src="assets/img/horteiras.jpg" alt="Horta comunitária">
+                        </div>
+                        <div class="proj-body">
+                            <h3>Cultivo</h3>
+                            <p>Quintais produtivos e segurança alimentar das famílias.</p>
+                        </div>
+                    </article>
+                </div>
+                <p class="small-note"></p>
+                <div class="video-project" id="video-musica">
+                    <h3>Projeto DÓ-RÉ-MÍ</h3>
+                    <p2></p2><a class="btn btn-primary nav-donate"
+                        href="https://youtu.be/gM2Jnd88c4Q?si=1xMAhXIZjuQvDxeB" target="_blank"
+                        rel="noopener">Apresentação de Encerramento do Projeto DÓ-RÉ-MÍ.</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="escola" style="background:var(--bg-alt)">
+            <div class="container sobre-grid">
+                <div class="sobre-img"><img src="assets/img/frente2.jpg"
+                        alt="Ambiente de atividade da Escola Comunitária Pinóquio"></div>
+                <div class="sobre-text">
+                    <p class="eyebrow">Nossa escola</p>
+                    <h2>Educação Infantil — Escola Pinóquio</h2>
+                    <p>Da Creche ao Infantil II, atendemos em média 100 crianças. Oferecemos um ambiente acolhedor onde
+                        seu filho desenvolve habilidades sociais essenciais e alcança a alfabetização completa com
+                        carinho, segurança e excelência.</p>
+                    <a class="btn btn-primary"
+                        href="https://wa.me/5598984173316?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20Escola%20Comunit%C3%A1ria%20Pin%C3%B3quio."
+                        target="_blank" rel="noopener">Conheça a nossa escola</a>
+                    <p class="small-note">Galeria de fotos da escola: <a
+                            href="https://drive.google.com/drive/folders/1kVJ3RcsYiKPR4g5U0pMvrAeqpZs6yUNs?usp=drive_link"
+                            target="_blank" rel="noopener">abrir pasta de fotos</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="transparencia">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Acesso à informação</p>
+                    <h2>Transparência</h2>
+                    <p>Consulte documentos, registros e informações institucionais.</p>
+                </div>
+                <div class="proposta-grid">
+                    <article class="prop-card">
+                        <h3>Balanços</h3>
+                        <p>Balanços financeiros e demonstrativos.</p>
+                    </article>
+                    <article class="prop-card">
+                        <h3>Relatórios de Atividades</h3>
+                        <p>Relatórios das ações e resultados institucionais.</p>
+                    </article>
+                    <article class="prop-card">
+                        <h3>Documentos Institucionais</h3>
+                        <p>Estatuto, Ata da Eleição e Organograma.</p>
+                    </article>
+                    <article class="prop-card">
+                        <h3>Registros Sociais</h3>
+                        <p>Registros sociais e participação em conselhos.</p>
+                    </article>
+                </div>
+                <p class="small-note"></p>
+            </div>
+        </section>
+
+        <section id="voluntariado" style="background:var(--bg-alt)">
+            <div class="container cta-final">
+                <p class="eyebrow">Programa de Voluntariado</p>
+                <h2>Junte-se aos bons!</h2>
+                <p>O Grêmio Cultural e Recreativo Anjo da Guarda está com as portas abertas para pessoas como você, que
+                    querem fazer a diferença e transformar vidas! Venha fazer parte do nosso Programa de Voluntariado e
+                    coloque seus talentos e sua vontade de ajudar a serviço de uma causa maior.</p>
+                <p><strong>Transforme, inspire, compartilhe.</strong> Seja voluntário(a) e ajude a construir um futuro
+                    mais justo e solidário. Entre em contato e saiba como participar!</p>
+                <a class="btn btn-primary"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfwxbTLfB_fMpTp5D63ardn4nbNGNxUFOQU92I5hy0_ZlXVhA/viewform"
+                    target="_blank" rel="noopener">Quero ser voluntário(a)</a>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container contato-grid">
+                <div>
+                    <p class="eyebrow">Fale conosco</p>
+                    <h2>Conheça nossa instituição ou participe dos nossos programas.</h2>
+                    <div class="contato-list">
+                        <div class="contato-row">
+                            <div><strong>Endereço</strong><span>Av. Vaticano, Qd K1, S/N — Anjo da Guarda, São Luís –
+                                    MA, CEP 65085-255</span></div>
+                        </div>
+                        <div class="contato-row">
+                            <div><strong>Telefone e WhatsApp</strong><span>(98) 98417-3316</span></div>
+                        </div>
+                        <div class="contato-row">
+                            <div><strong>Instagram</strong><span><a href="https://www.instagram.com/escpinoquio/"
+                                        target="_blank" rel="noopener">@escpinoquio</a></span></div>
+                        </div>
+                    </div>
+                    <div class="hero-ctas"><a class="btn btn-primary" href="https://wa.me/5598984173316" target="_blank"
+                            rel="noopener">Fale com a instituição</a><a class="btn btn-outline"
+                            href="https://forms.gle/NaqeXxsUjZ79HSR37" target="_blank" rel="noopener">Seja um
+                            doador</a><a class="btn btn-outline" href="#voluntariado">Seja um voluntário</a></div>
+                </div>
+                <div class="map-box">
+                    <p>Estamos no bairro Anjo da Guarda, em São Luís — MA.</p><a
+                        href="https://www.google.com/maps/search/?api=1&query=Av.+Vaticano+Qd+K1+Anjo+da+Guarda+S%C3%A3o+Luis+MA+65085-255"
+                        class="btn btn-outline" target="_blank" rel="noopener">Como chegar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand"><img src="assets/img/logo-pinoquio.png"
+                            alt="Logo da Escola Comunitária Pinóquio" class="footer-logo"><strong>Grêmio Cultural e
+                            Recreativo Anjo da Guarda</strong></div>
+                    <p>Escola Comunitária Pinóquio. Desde 1975, construindo e transformando realidades.</p>
+                </div>
+                <div>
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#projetos">Programas e Projetos</a></li>
+                        <li><a href="#escola">Nossa Escola</a></li>
+                        <li><a href="#transparencia">Transparência</a></li>
+                        <li><a href="#contato">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Redes sociais</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/escpinoquio/" target="_blank"
+                                rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@GREMIOANJODAGUARDA" target="_blank"
+                                rel="noopener">YouTube</a></li>
+                        <li><a href="https://www.linkedin.com/in/gremio-recreativo-e-cultural-anjo-da-guarda-6555122a5"
+                                target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://wa.me/5598984173316" target="_blank" rel="noopener">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Participe</h4>
+                    <ul>
+                        <li><a href="https://forms.gle/NaqeXxsUjZ79HSR37" target="_blank" rel="noopener">Seja um
+                                doador</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfwxbTLfB_fMpTp5D63ardn4nbNGNxUFOQU92I5hy0_ZlXVhA/viewform"
+                                target="_blank" rel="noopener">Seja voluntário</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 Grêmio Cultural e Recreativo Anjo da Guarda. Todos os direitos
+                    reservados.</span></div>
+        </div>
+    </footer>
+    <a href="https://wa.me/5598984173316" class="wa-float" aria-label="Falar no WhatsApp" target="_blank"
+        rel="noopener"><span aria-hidden="true">☏</span></a>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
